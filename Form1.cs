@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using System.Linq.Expressions;
+
 namespace TheDreamWorks
 {
 
@@ -39,8 +42,14 @@ namespace TheDreamWorks
 
         }
 
-        private void button1MembersGo_Click(object sender, EventArgs e)
+        private ListBox GetListBox1()
         {
+            return listBox1;
+        }        
+
+        private void button1MembersGo_Click(object sender, EventArgs e)
+        { 
+        
             if (textBox_Member1.Text != string.Empty)
             {
                 memberList.Add(textBox_Member1.Text);
@@ -117,11 +126,10 @@ namespace TheDreamWorks
 
 
             toolStripCombox_MemberList.Items.AddRange(memberList.ToArray());
-
             
-
-        }
-
+            
+                      
+        }       
         private void button2_Click(object sender, EventArgs e)
         {
             button2.BackColor = Color.LightCyan;
@@ -184,7 +192,7 @@ namespace TheDreamWorks
 
         private void button14_Click(object sender, EventArgs e)
         {
-           button14.BackColor = Color.LightCyan;
+            button14.BackColor = Color.LightCyan;
         }
 
         private void button15_Click(object sender, EventArgs e)
@@ -195,7 +203,33 @@ namespace TheDreamWorks
         private void button16_Click(object sender, EventArgs e)
         {
             button16.BackColor = Color.LightCyan;
+
         }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            listBox1_SelectedIndexChanged(sender, e, memberList);
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e, object memberList)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e, List<MemberListBinding> memberList)
+        {
+             memberList = new List<MemberListBinding>();
+                         
+            
+            
+            
+        }
+          
+    
+    
     }
+
+
+
 }
 
