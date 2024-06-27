@@ -3,19 +3,20 @@ using System.Linq.Expressions;
 
 namespace TheDreamWorks
 {
-
+    
     public struct FamilyDuties
-    {
+            {
         public string name;
         public List<string> Chores = new List<string>();
 
-        public FamilyDuties()
+        public FamilyDuties(string Name)
         {
+            name = Name;
         }
     }
     public partial class Form1 : Form
     {
-
+        public List<FamilyDuties> family = new List<FamilyDuties>();
         public List<string> memberList = new List<string>();
         public List<string> buttons = new List<string>();
 
@@ -45,14 +46,16 @@ namespace TheDreamWorks
         private ListBox GetListBox1()
         {
             return listBox1;
-        }        
+        }
 
         private void button1MembersGo_Click(object sender, EventArgs e)
-        { 
-        
+        {
+
             if (textBox_Member1.Text != string.Empty)
             {
                 memberList.Add(textBox_Member1.Text);
+                FamilyDuties Member = new FamilyDuties(textBox_Member1.Text);
+                family.Add(Member);
             }
             else
             {
@@ -61,6 +64,8 @@ namespace TheDreamWorks
             if (textBox_Member2.Text != string.Empty)
             {
                 memberList.Add(textBox_Member2.Text);
+                FamilyDuties Member2 = new FamilyDuties(textBox_Member2.Text);
+                family.Add(Member2);
             }
             else
             {
@@ -69,6 +74,8 @@ namespace TheDreamWorks
             if (textBox_Member3.Text != string.Empty)
             {
                 memberList.Add(textBox_Member3.Text);
+                FamilyDuties Member3 = new FamilyDuties(textBox_Member3.Text);
+                family.Add(Member3);
             }
             else
             {
@@ -77,6 +84,8 @@ namespace TheDreamWorks
             if (textBox_Member4.Text != string.Empty)
             {
                 memberList.Add(textBox_Member4.Text);
+                FamilyDuties Member4 = new FamilyDuties(textBox_Member4.Text);
+                family.Add(Member4);
             }
             else
             {
@@ -85,6 +94,8 @@ namespace TheDreamWorks
             if (textBox_Member5.Text != string.Empty)
             {
                 memberList.Add(textBox_Member5.Text);
+                FamilyDuties Member5 = new FamilyDuties(textBox_Member5.Text);
+                family.Add(Member5);
             }
             else
             {
@@ -93,6 +104,8 @@ namespace TheDreamWorks
             if (textBox_Member6.Text != string.Empty)
             {
                 memberList.Add(textBox_Member6.Text);
+                FamilyDuties Member6 = new FamilyDuties(textBox_Member6.Text);
+                family.Add(Member6);
             }
             else
             {
@@ -102,6 +115,8 @@ namespace TheDreamWorks
             {
 
                 memberList.Add(textBox_Member7.Text);
+                FamilyDuties Member7 = new FamilyDuties(textBox_Member7.Text);
+                family.Add(Member7);
             }
             else
             {
@@ -110,6 +125,8 @@ namespace TheDreamWorks
             if (textBox_Member8.Text != string.Empty)
             {
                 memberList.Add(textBox_Member8.Text);
+                FamilyDuties Member8 = new FamilyDuties(textBox_Member8.Text);
+                family.Add(Member8);
             }
             else
             {
@@ -118,6 +135,8 @@ namespace TheDreamWorks
             if (textBox_Member9.Text != string.Empty)
             {
                 memberList.Add(textBox_Member9.Text);
+                FamilyDuties Member9 = new FamilyDuties(textBox_Member9.Text);
+                family.Add(Member9);
             }
             else
             {
@@ -126,13 +145,17 @@ namespace TheDreamWorks
 
 
             toolStripCombox_MemberList.Items.AddRange(memberList.ToArray());
-            
-            
-                      
-        }       
+            {
+
+            }
+
+
+
+        }
         private void button2_Click(object sender, EventArgs e)
         {
             button2.BackColor = Color.LightCyan;
+            AssignChore(toolStripCombox_MemberList.SelectedItem.ToString());
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -218,18 +241,51 @@ namespace TheDreamWorks
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e, List<MemberListBinding> memberList)
         {
-             memberList = new List<MemberListBinding>();
-                         
-            
-            
-            
+            memberList = new List<MemberListBinding>();
         }
+
+        private void AssignChore(string chore)
+        {
+            foreach (var member in family)
+            {
+                if (member.name == toolStripCombox_MemberList.SelectedItem.ToString())
+                {
+                    member.Chores.Add(chore);
+                }
+            }
+        }
+
+        private void toolStripCombox_MemberList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (toolStripCombox_MemberList.SelectedIndex > 0)
+            {              
+                
+              groupBox2.Enabled = true;
+
+                foreach (var member in family)
+                {
+                    if (member.name == toolStripCombox_MemberList.SelectedItem.ToString())
+                    {
+                        foreach (var chore in member.Chores)
+                        {
+                            //iterate through each of the chores buttons
+                            //if match change button color
+                        }
+                    }
+                }
+            }
+           
+        }
+    }
+
+}
+        
+        
           
     
     
-    }
+    
 
 
 
-}
 

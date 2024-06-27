@@ -437,6 +437,7 @@
             groupBox2.Controls.Add(button4);
             groupBox2.Controls.Add(button3);
             groupBox2.Controls.Add(button2);
+            groupBox2.Enabled = false;
             groupBox2.Location = new Point(203, 42);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(728, 407);
@@ -622,6 +623,7 @@
             // 
             toolStripCombox_MemberList.Name = "toolStripCombox_MemberList";
             toolStripCombox_MemberList.Size = new Size(121, 25);
+            toolStripCombox_MemberList.SelectedIndexChanged += toolStripCombox_MemberList_SelectedIndexChanged;
             // 
             // tabPage1
             // 
