@@ -407,7 +407,7 @@
             tabPage2.Padding = new Padding(3);
             tabPage2.Size = new Size(1252, 592);
             tabPage2.TabIndex = 1;
-            tabPage2.Text = "Chores";
+            tabPage2.Text = "ChoreList";
             tabPage2.UseVisualStyleBackColor = true;
             // 
             // panel2
@@ -443,7 +443,7 @@
             groupBox2.Size = new Size(728, 407);
             groupBox2.TabIndex = 0;
             groupBox2.TabStop = false;
-            groupBox2.Text = "Daily Chores";
+            groupBox2.Text = "Daily ChoreList";
             // 
             // button16
             // 
@@ -507,7 +507,7 @@
             button11.Name = "button11";
             button11.Size = new Size(107, 56);
             button11.TabIndex = 9;
-            button11.Text = "Homework";
+            button11.Text = "Water Plants";
             button11.UseVisualStyleBackColor = false;
             button11.Click += button11_Click;
             // 
@@ -742,9 +742,9 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(326, 19);
+            dateTimePicker1.Location = new Point(319, 19);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(495, 46);
+            dateTimePicker1.Size = new Size(502, 46);
             dateTimePicker1.TabIndex = 2;
             // 
             // richTextBox1
