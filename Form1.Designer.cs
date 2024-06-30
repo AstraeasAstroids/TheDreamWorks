@@ -28,25 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             miniToolStrip = new ToolStrip();
             tabPage3 = new TabPage();
             panel3 = new Panel();
-            listBox1 = new ListBox();
-            label13 = new Label();
-            label12 = new Label();
-            label11 = new Label();
-            label10 = new Label();
-            label9 = new Label();
-            label8 = new Label();
-            label7 = new Label();
-            label6 = new Label();
-            label5 = new Label();
+            pictureBox5 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            panel_RewardsMembers = new Panel();
+            label_Member1 = new Label();
+            Label_Member2 = new Label();
+            label_Member9 = new Label();
+            label_Member3 = new Label();
+            label_Member8 = new Label();
+            label_Member4 = new Label();
+            label_Member7 = new Label();
+            label_Member5 = new Label();
+            label_Member6 = new Label();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
             pictureBox3 = new PictureBox();
-            pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             richTextBox2 = new RichTextBox();
             progressBar9 = new ProgressBar();
@@ -61,21 +64,21 @@
             tabPage2 = new TabPage();
             panel2 = new Panel();
             groupBox2 = new GroupBox();
-            button16 = new Button();
-            button15 = new Button();
-            button14 = new Button();
-            button13 = new Button();
-            button12 = new Button();
-            button11 = new Button();
-            button10 = new Button();
-            button9 = new Button();
-            button8 = new Button();
-            button7 = new Button();
-            button6 = new Button();
-            button5 = new Button();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
+            button_Other = new Button();
+            button_FeedAnimals = new Button();
+            button_Shower = new Button();
+            button_Dust = new Button();
+            button_Homework = new Button();
+            button_WaterPlants = new Button();
+            button_BrushUp = new Button();
+            button_Mop = new Button();
+            button_Organize = new Button();
+            button_Vacuum = new Button();
+            button_LitterBox = new Button();
+            button_Disinfect = new Button();
+            button_Dishes = new Button();
+            button_Trash = new Button();
+            button_Laundry = new Button();
             toolStripComboBox = new ToolStrip();
             toolStripCombox_MemberList = new ToolStripComboBox();
             tabPage1 = new TabPage();
@@ -96,8 +99,11 @@
             tabControl1 = new TabControl();
             tabPage3.SuspendLayout();
             panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            panel_RewardsMembers.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tabPage2.SuspendLayout();
             panel2.SuspendLayout();
@@ -136,22 +142,15 @@
             // panel3
             // 
             panel3.BackColor = Color.Silver;
-            panel3.Controls.Add(listBox1);
-            panel3.Controls.Add(label13);
-            panel3.Controls.Add(label12);
-            panel3.Controls.Add(label11);
-            panel3.Controls.Add(label10);
-            panel3.Controls.Add(label9);
-            panel3.Controls.Add(label8);
-            panel3.Controls.Add(label7);
-            panel3.Controls.Add(label6);
-            panel3.Controls.Add(label5);
+            panel3.Controls.Add(pictureBox5);
+            panel3.Controls.Add(pictureBox4);
+            panel3.Controls.Add(pictureBox2);
+            panel3.Controls.Add(panel_RewardsMembers);
             panel3.Controls.Add(label4);
             panel3.Controls.Add(label3);
             panel3.Controls.Add(label2);
             panel3.Controls.Add(label1);
             panel3.Controls.Add(pictureBox3);
-            panel3.Controls.Add(pictureBox2);
             panel3.Controls.Add(pictureBox1);
             panel3.Controls.Add(richTextBox2);
             panel3.Controls.Add(progressBar9);
@@ -168,97 +167,138 @@
             panel3.Size = new Size(1275, 507);
             panel3.TabIndex = 0;
             // 
-            // listBox1
+            // pictureBox5
             // 
-            listBox1.BackColor = Color.PaleGoldenrod;
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 21;
-            listBox1.Location = new Point(871, 63);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(184, 340);
-            listBox1.TabIndex = 27;
-            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(19, 298);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(108, 109);
+            pictureBox5.TabIndex = 31;
+            pictureBox5.TabStop = false;
             // 
-            // label13
+            // pictureBox4
             // 
-            label13.AutoSize = true;
-            label13.Location = new Point(207, 372);
-            label13.Name = "label13";
-            label13.Size = new Size(60, 21);
-            label13.TabIndex = 26;
-            label13.Text = "label13";
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(111, 150);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(108, 109);
+            pictureBox4.TabIndex = 30;
+            pictureBox4.TabStop = false;
             // 
-            // label12
+            // pictureBox2
             // 
-            label12.AutoSize = true;
-            label12.Location = new Point(207, 335);
-            label12.Name = "label12";
-            label12.Size = new Size(60, 21);
-            label12.TabIndex = 25;
-            label12.Text = "label12";
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(22, 150);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(108, 109);
+            pictureBox2.TabIndex = 29;
+            pictureBox2.TabStop = false;
             // 
-            // label11
+            // panel_RewardsMembers
             // 
-            label11.AutoSize = true;
-            label11.Location = new Point(206, 298);
-            label11.Name = "label11";
-            label11.Size = new Size(55, 21);
-            label11.TabIndex = 24;
-            label11.Text = "label11";
+            panel_RewardsMembers.Controls.Add(label_Member1);
+            panel_RewardsMembers.Controls.Add(Label_Member2);
+            panel_RewardsMembers.Controls.Add(label_Member9);
+            panel_RewardsMembers.Controls.Add(label_Member3);
+            panel_RewardsMembers.Controls.Add(label_Member8);
+            panel_RewardsMembers.Controls.Add(label_Member4);
+            panel_RewardsMembers.Controls.Add(label_Member7);
+            panel_RewardsMembers.Controls.Add(label_Member5);
+            panel_RewardsMembers.Controls.Add(label_Member6);
+            panel_RewardsMembers.Location = new Point(871, 40);
+            panel_RewardsMembers.Name = "panel_RewardsMembers";
+            panel_RewardsMembers.Size = new Size(207, 403);
+            panel_RewardsMembers.TabIndex = 28;
             // 
-            // label10
+            // label_Member1
             // 
-            label10.AutoSize = true;
-            label10.Location = new Point(208, 261);
-            label10.Name = "label10";
-            label10.Size = new Size(60, 21);
-            label10.TabIndex = 23;
-            label10.Text = "label10";
+            label_Member1.AutoSize = true;
+            label_Member1.ForeColor = Color.Silver;
+            label_Member1.Location = new Point(3, 32);
+            label_Member1.Name = "label_Member1";
+            label_Member1.Size = new Size(77, 21);
+            label_Member1.TabIndex = 18;
+            label_Member1.Text = "Member1";
             // 
-            // label9
+            // Label_Member2
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(208, 224);
-            label9.Name = "label9";
-            label9.Size = new Size(54, 21);
-            label9.TabIndex = 22;
-            label9.Text = "label9";
+            Label_Member2.AutoSize = true;
+            Label_Member2.ForeColor = Color.Silver;
+            Label_Member2.Location = new Point(3, 73);
+            Label_Member2.Name = "Label_Member2";
+            Label_Member2.Size = new Size(82, 21);
+            Label_Member2.TabIndex = 19;
+            Label_Member2.Text = "Member2";
             // 
-            // label8
+            // label_Member9
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(208, 187);
-            label8.Name = "label8";
-            label8.Size = new Size(54, 21);
-            label8.TabIndex = 21;
-            label8.Text = "label8";
+            label_Member9.AutoSize = true;
+            label_Member9.ForeColor = Color.Silver;
+            label_Member9.Location = new Point(-2, 344);
+            label_Member9.Name = "label_Member9";
+            label_Member9.Size = new Size(82, 21);
+            label_Member9.TabIndex = 26;
+            label_Member9.Text = "Member9";
             // 
-            // label7
+            // label_Member3
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(208, 150);
-            label7.Name = "label7";
-            label7.Size = new Size(53, 21);
-            label7.TabIndex = 20;
-            label7.Text = "label7";
+            label_Member3.AutoSize = true;
+            label_Member3.ForeColor = Color.Silver;
+            label_Member3.Location = new Point(3, 108);
+            label_Member3.Name = "label_Member3";
+            label_Member3.Size = new Size(82, 21);
+            label_Member3.TabIndex = 20;
+            label_Member3.Text = "Member3";
             // 
-            // label6
+            // label_Member8
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(207, 113);
-            label6.Name = "label6";
-            label6.Size = new Size(54, 21);
-            label6.TabIndex = 19;
-            label6.Text = "label6";
+            label_Member8.AutoSize = true;
+            label_Member8.ForeColor = Color.Silver;
+            label_Member8.Location = new Point(3, 307);
+            label_Member8.Name = "label_Member8";
+            label_Member8.Size = new Size(82, 21);
+            label_Member8.TabIndex = 25;
+            label_Member8.Text = "Member8";
             // 
-            // label5
+            // label_Member4
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(207, 76);
-            label5.Name = "label5";
-            label5.Size = new Size(54, 21);
-            label5.TabIndex = 18;
-            label5.Text = "label5";
+            label_Member4.AutoSize = true;
+            label_Member4.ForeColor = Color.Silver;
+            label_Member4.Location = new Point(3, 141);
+            label_Member4.Name = "label_Member4";
+            label_Member4.Size = new Size(82, 21);
+            label_Member4.TabIndex = 21;
+            label_Member4.Text = "Member4";
+            // 
+            // label_Member7
+            // 
+            label_Member7.AutoSize = true;
+            label_Member7.ForeColor = Color.Silver;
+            label_Member7.Location = new Point(-2, 270);
+            label_Member7.Name = "label_Member7";
+            label_Member7.Size = new Size(81, 21);
+            label_Member7.TabIndex = 24;
+            label_Member7.Text = "Member7";
+            // 
+            // label_Member5
+            // 
+            label_Member5.AutoSize = true;
+            label_Member5.ForeColor = Color.Silver;
+            label_Member5.Location = new Point(3, 180);
+            label_Member5.Name = "label_Member5";
+            label_Member5.Size = new Size(82, 21);
+            label_Member5.TabIndex = 22;
+            label_Member5.Text = "Member5";
+            // 
+            // label_Member6
+            // 
+            label_Member6.AutoSize = true;
+            label_Member6.ForeColor = Color.Silver;
+            label_Member6.Location = new Point(0, 233);
+            label_Member6.Name = "label_Member6";
+            label_Member6.Size = new Size(82, 21);
+            label_Member6.TabIndex = 23;
+            label_Member6.Text = "Member6";
             // 
             // label4
             // 
@@ -308,19 +348,12 @@
             pictureBox3.TabIndex = 13;
             pictureBox3.TabStop = false;
             // 
-            // pictureBox2
-            // 
-            pictureBox2.Location = new Point(19, 169);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(133, 86);
-            pictureBox2.TabIndex = 12;
-            pictureBox2.TabStop = false;
-            // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(19, 60);
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(35, 23);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(93, 74);
+            pictureBox1.Size = new Size(108, 109);
             pictureBox1.TabIndex = 11;
             pictureBox1.TabStop = false;
             // 
@@ -422,21 +455,21 @@
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(button16);
-            groupBox2.Controls.Add(button15);
-            groupBox2.Controls.Add(button14);
-            groupBox2.Controls.Add(button13);
-            groupBox2.Controls.Add(button12);
-            groupBox2.Controls.Add(button11);
-            groupBox2.Controls.Add(button10);
-            groupBox2.Controls.Add(button9);
-            groupBox2.Controls.Add(button8);
-            groupBox2.Controls.Add(button7);
-            groupBox2.Controls.Add(button6);
-            groupBox2.Controls.Add(button5);
-            groupBox2.Controls.Add(button4);
-            groupBox2.Controls.Add(button3);
-            groupBox2.Controls.Add(button2);
+            groupBox2.Controls.Add(button_Other);
+            groupBox2.Controls.Add(button_FeedAnimals);
+            groupBox2.Controls.Add(button_Shower);
+            groupBox2.Controls.Add(button_Dust);
+            groupBox2.Controls.Add(button_Homework);
+            groupBox2.Controls.Add(button_WaterPlants);
+            groupBox2.Controls.Add(button_BrushUp);
+            groupBox2.Controls.Add(button_Mop);
+            groupBox2.Controls.Add(button_Organize);
+            groupBox2.Controls.Add(button_Vacuum);
+            groupBox2.Controls.Add(button_LitterBox);
+            groupBox2.Controls.Add(button_Disinfect);
+            groupBox2.Controls.Add(button_Dishes);
+            groupBox2.Controls.Add(button_Trash);
+            groupBox2.Controls.Add(button_Laundry);
             groupBox2.Enabled = false;
             groupBox2.Location = new Point(203, 42);
             groupBox2.Name = "groupBox2";
@@ -445,170 +478,170 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Daily ChoreList";
             // 
-            // button16
+            // button_Other
             // 
-            button16.BackColor = Color.MistyRose;
-            button16.Location = new Point(579, 292);
-            button16.Name = "button16";
-            button16.Size = new Size(107, 58);
-            button16.TabIndex = 14;
-            button16.Text = "Other";
-            button16.UseVisualStyleBackColor = false;
-            button16.Click += button16_Click;
+            button_Other.BackColor = SystemColors.ControlDark;
+            button_Other.Location = new Point(579, 292);
+            button_Other.Name = "button_Other";
+            button_Other.Size = new Size(107, 58);
+            button_Other.TabIndex = 14;
+            button_Other.Text = "Other";
+            button_Other.UseVisualStyleBackColor = false;
+            button_Other.Click += button_Other_Click;
             // 
-            // button15
+            // button_FeedAnimals
             // 
-            button15.BackColor = Color.MistyRose;
-            button15.Location = new Point(449, 292);
-            button15.Name = "button15";
-            button15.Size = new Size(97, 58);
-            button15.TabIndex = 13;
-            button15.Text = "Feed Animals";
-            button15.UseVisualStyleBackColor = false;
-            button15.Click += button15_Click;
+            button_FeedAnimals.BackColor = SystemColors.ControlDark;
+            button_FeedAnimals.Location = new Point(449, 292);
+            button_FeedAnimals.Name = "button_FeedAnimals";
+            button_FeedAnimals.Size = new Size(97, 58);
+            button_FeedAnimals.TabIndex = 13;
+            button_FeedAnimals.Text = "Feed Animals";
+            button_FeedAnimals.UseVisualStyleBackColor = false;
+            button_FeedAnimals.Click += button_FeedAnimals_Click;
             // 
-            // button14
+            // button_Shower
             // 
-            button14.BackColor = Color.MistyRose;
-            button14.Location = new Point(321, 292);
-            button14.Name = "button14";
-            button14.Size = new Size(99, 58);
-            button14.TabIndex = 12;
-            button14.Text = "Shower";
-            button14.UseVisualStyleBackColor = false;
-            button14.Click += button14_Click;
+            button_Shower.BackColor = SystemColors.ControlDark;
+            button_Shower.Location = new Point(321, 292);
+            button_Shower.Name = "button_Shower";
+            button_Shower.Size = new Size(99, 58);
+            button_Shower.TabIndex = 12;
+            button_Shower.Text = "Shower";
+            button_Shower.UseVisualStyleBackColor = false;
+            button_Shower.Click += button_Shower_Click;
             // 
-            // button13
+            // button_Dust
             // 
-            button13.BackColor = Color.MistyRose;
-            button13.Location = new Point(195, 292);
-            button13.Name = "button13";
-            button13.Size = new Size(95, 58);
-            button13.TabIndex = 11;
-            button13.Text = "Dust";
-            button13.UseVisualStyleBackColor = false;
-            button13.Click += button13_Click;
+            button_Dust.BackColor = SystemColors.ControlDark;
+            button_Dust.Location = new Point(195, 292);
+            button_Dust.Name = "button_Dust";
+            button_Dust.Size = new Size(95, 58);
+            button_Dust.TabIndex = 11;
+            button_Dust.Text = "Dust";
+            button_Dust.UseVisualStyleBackColor = false;
+            button_Dust.Click += button_Dust_Click;
             // 
-            // button12
+            // button_Homework
             // 
-            button12.BackColor = Color.MistyRose;
-            button12.Location = new Point(61, 292);
-            button12.Name = "button12";
-            button12.Size = new Size(97, 58);
-            button12.TabIndex = 10;
-            button12.Text = "Homework";
-            button12.UseVisualStyleBackColor = false;
-            button12.Click += button12_Click;
+            button_Homework.BackColor = SystemColors.ControlDark;
+            button_Homework.Location = new Point(61, 292);
+            button_Homework.Name = "button_Homework";
+            button_Homework.Size = new Size(97, 58);
+            button_Homework.TabIndex = 10;
+            button_Homework.Text = "Homework";
+            button_Homework.UseVisualStyleBackColor = false;
+            button_Homework.Click += button_Homework_Click;
             // 
-            // button11
+            // button_WaterPlants
             // 
-            button11.BackColor = Color.MistyRose;
-            button11.Location = new Point(579, 174);
-            button11.Name = "button11";
-            button11.Size = new Size(107, 56);
-            button11.TabIndex = 9;
-            button11.Text = "Water Plants";
-            button11.UseVisualStyleBackColor = false;
-            button11.Click += button11_Click;
+            button_WaterPlants.BackColor = SystemColors.ControlDark;
+            button_WaterPlants.Location = new Point(579, 174);
+            button_WaterPlants.Name = "button_WaterPlants";
+            button_WaterPlants.Size = new Size(107, 56);
+            button_WaterPlants.TabIndex = 9;
+            button_WaterPlants.Text = "Water Plants";
+            button_WaterPlants.UseVisualStyleBackColor = false;
+            button_WaterPlants.Click += button_WaterPlants_Click;
             // 
-            // button10
+            // button_BrushUp
             // 
-            button10.BackColor = Color.MistyRose;
-            button10.Location = new Point(449, 174);
-            button10.Name = "button10";
-            button10.Size = new Size(97, 56);
-            button10.TabIndex = 8;
-            button10.Text = "Brush-Up";
-            button10.UseVisualStyleBackColor = false;
-            button10.Click += button10_Click;
+            button_BrushUp.BackColor = SystemColors.ControlDark;
+            button_BrushUp.Location = new Point(449, 174);
+            button_BrushUp.Name = "button_BrushUp";
+            button_BrushUp.Size = new Size(97, 56);
+            button_BrushUp.TabIndex = 8;
+            button_BrushUp.Text = "Brush-Up";
+            button_BrushUp.UseVisualStyleBackColor = false;
+            button_BrushUp.Click += button_BrushUp_Click;
             // 
-            // button9
+            // button_Mop
             // 
-            button9.BackColor = Color.MistyRose;
-            button9.Location = new Point(321, 174);
-            button9.Name = "button9";
-            button9.Size = new Size(99, 56);
-            button9.TabIndex = 7;
-            button9.Text = "Mop";
-            button9.UseVisualStyleBackColor = false;
-            button9.Click += button9_Click;
+            button_Mop.BackColor = SystemColors.ControlDark;
+            button_Mop.Location = new Point(321, 174);
+            button_Mop.Name = "button_Mop";
+            button_Mop.Size = new Size(99, 56);
+            button_Mop.TabIndex = 7;
+            button_Mop.Text = "Mop";
+            button_Mop.UseVisualStyleBackColor = false;
+            button_Mop.Click += button_Mop_Click;
             // 
-            // button8
+            // button_Organize
             // 
-            button8.BackColor = Color.MistyRose;
-            button8.Location = new Point(195, 174);
-            button8.Name = "button8";
-            button8.Size = new Size(95, 56);
-            button8.TabIndex = 6;
-            button8.Text = "Organize/Declutter";
-            button8.UseVisualStyleBackColor = false;
-            button8.Click += button8_Click;
+            button_Organize.BackColor = SystemColors.ControlDark;
+            button_Organize.Location = new Point(195, 174);
+            button_Organize.Name = "button_Organize";
+            button_Organize.Size = new Size(95, 56);
+            button_Organize.TabIndex = 6;
+            button_Organize.Text = "Organize/Declutter";
+            button_Organize.UseVisualStyleBackColor = false;
+            button_Organize.Click += button_Organize_Click;
             // 
-            // button7
+            // button_Vacuum
             // 
-            button7.BackColor = Color.MistyRose;
-            button7.Location = new Point(61, 174);
-            button7.Name = "button7";
-            button7.Size = new Size(97, 56);
-            button7.TabIndex = 5;
-            button7.Text = "Vacuum";
-            button7.UseVisualStyleBackColor = false;
-            button7.Click += button7_Click;
+            button_Vacuum.BackColor = SystemColors.ControlDark;
+            button_Vacuum.Location = new Point(61, 174);
+            button_Vacuum.Name = "button_Vacuum";
+            button_Vacuum.Size = new Size(97, 56);
+            button_Vacuum.TabIndex = 5;
+            button_Vacuum.Text = "Vacuum";
+            button_Vacuum.UseVisualStyleBackColor = false;
+            button_Vacuum.Click += button_Vacuum_Click;
             // 
-            // button6
+            // button_LitterBox
             // 
-            button6.BackColor = Color.MistyRose;
-            button6.Location = new Point(579, 57);
-            button6.Name = "button6";
-            button6.Size = new Size(107, 54);
-            button6.TabIndex = 4;
-            button6.Text = "LitterBox/ WalkDog";
-            button6.UseVisualStyleBackColor = false;
-            button6.Click += button6_Click;
+            button_LitterBox.BackColor = SystemColors.ControlDark;
+            button_LitterBox.Location = new Point(579, 57);
+            button_LitterBox.Name = "button_LitterBox";
+            button_LitterBox.Size = new Size(107, 54);
+            button_LitterBox.TabIndex = 4;
+            button_LitterBox.Text = "LitterBox/ WalkDog";
+            button_LitterBox.UseVisualStyleBackColor = false;
+            button_LitterBox.Click += button_LitterBox_Click;
             // 
-            // button5
+            // button_Disinfect
             // 
-            button5.BackColor = Color.MistyRose;
-            button5.Location = new Point(449, 57);
-            button5.Name = "button5";
-            button5.Size = new Size(97, 54);
-            button5.TabIndex = 3;
-            button5.Text = "Disinfect";
-            button5.UseVisualStyleBackColor = false;
-            button5.Click += button5_Click;
+            button_Disinfect.BackColor = SystemColors.ControlDark;
+            button_Disinfect.Location = new Point(449, 57);
+            button_Disinfect.Name = "button_Disinfect";
+            button_Disinfect.Size = new Size(97, 54);
+            button_Disinfect.TabIndex = 3;
+            button_Disinfect.Text = "Disinfect";
+            button_Disinfect.UseVisualStyleBackColor = false;
+            button_Disinfect.Click += button_Disinfect_Click;
             // 
-            // button4
+            // button_Dishes
             // 
-            button4.BackColor = Color.MistyRose;
-            button4.Location = new Point(321, 57);
-            button4.Name = "button4";
-            button4.Size = new Size(99, 54);
-            button4.TabIndex = 2;
-            button4.Text = "Dsishes";
-            button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click;
+            button_Dishes.BackColor = SystemColors.ControlDark;
+            button_Dishes.Location = new Point(321, 57);
+            button_Dishes.Name = "button_Dishes";
+            button_Dishes.Size = new Size(99, 54);
+            button_Dishes.TabIndex = 2;
+            button_Dishes.Text = "Dishes";
+            button_Dishes.UseVisualStyleBackColor = false;
+            button_Dishes.Click += button_Dishes_Click;
             // 
-            // button3
+            // button_Trash
             // 
-            button3.BackColor = Color.MistyRose;
-            button3.Location = new Point(195, 57);
-            button3.Name = "button3";
-            button3.Size = new Size(95, 54);
-            button3.TabIndex = 1;
-            button3.Text = "Trash";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
+            button_Trash.BackColor = SystemColors.ControlDark;
+            button_Trash.Location = new Point(195, 57);
+            button_Trash.Name = "button_Trash";
+            button_Trash.Size = new Size(95, 54);
+            button_Trash.TabIndex = 1;
+            button_Trash.Text = "Trash";
+            button_Trash.UseVisualStyleBackColor = false;
+            button_Trash.Click += button_Trash_Click;
             // 
-            // button2
+            // button_Laundry
             // 
-            button2.BackColor = Color.MistyRose;
-            button2.Location = new Point(61, 57);
-            button2.Name = "button2";
-            button2.Size = new Size(97, 54);
-            button2.TabIndex = 0;
-            button2.Text = "Laundrdy";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            button_Laundry.BackColor = SystemColors.ControlDark;
+            button_Laundry.Location = new Point(61, 57);
+            button_Laundry.Name = "button_Laundry";
+            button_Laundry.Size = new Size(97, 54);
+            button_Laundry.TabIndex = 0;
+            button_Laundry.Text = "Laundry";
+            button_Laundry.UseVisualStyleBackColor = false;
+            button_Laundry.Click += button_Laundry_Click;
             // 
             // toolStripComboBox
             // 
@@ -792,8 +825,12 @@
             tabPage3.ResumeLayout(false);
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            panel_RewardsMembers.ResumeLayout(false);
+            panel_RewardsMembers.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             tabPage2.ResumeLayout(false);
             tabPage2.PerformLayout();
@@ -814,22 +851,20 @@
         private ToolStrip miniToolStrip;
         private TabPage tabPage3;
         private Panel panel3;
-        private ListBox listBox1;
-        private Label label13;
-        private Label label12;
-        private Label label11;
-        private Label label10;
-        private Label label9;
-        private Label label8;
-        private Label label7;
-        private Label label6;
-        private Label label5;
+        private Label label_Member9;
+        private Label label_Member8;
+        private Label label_Member7;
+        private Label label_Member6;
+        private Label label_Member5;
+        private Label label_Member4;
+        private Label label_Member3;
+        private Label Label_Member2;
+        private Label label_Member1;
         private Label label4;
         private Label label3;
         private Label label2;
         private Label label1;
         private PictureBox pictureBox3;
-        private PictureBox pictureBox2;
         private PictureBox pictureBox1;
         private RichTextBox richTextBox2;
         private ProgressBar progressBar9;
@@ -844,21 +879,21 @@
         private TabPage tabPage2;
         private Panel panel2;
         private GroupBox groupBox2;
-        private Button button16;
-        private Button button15;
-        private Button button14;
-        private Button button13;
-        private Button button12;
-        private Button button11;
-        private Button button10;
-        private Button button9;
-        private Button button8;
-        private Button button7;
-        private Button button6;
-        private Button button5;
-        private Button button4;
-        private Button button3;
-        private Button button2;
+        private Button button_Other;
+        private Button button_FeedAnimals;
+        private Button button_Shower;
+        private Button button_Dust;
+        private Button button_Homework;
+        private Button button_WaterPlants;
+        private Button button_BrushUp;
+        private Button button_Mop;
+        private Button button_Organize;
+        private Button button_Vacuum;
+        private Button button_LitterBox;
+        private Button button_Disinfect;
+        private Button button_Dishes;
+        private Button button_Trash;
+        private Button button_Laundry;
         private ToolStrip toolStripComboBox;
         private ToolStripComboBox toolStripCombox_MemberList;
         private TabPage tabPage1;
@@ -877,5 +912,9 @@
         private RichTextBox richTextBox1;
         private Button button1MembersGo;
         private TabControl tabControl1;
+        private Panel panel_RewardsMembers;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox2;
     }
 }

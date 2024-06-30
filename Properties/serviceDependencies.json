@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:Chores,familyMembers"
+    },
+    "secrets1": {
+      "type": "secrets",
+      "connectionId": null
+    }
+  }
+}

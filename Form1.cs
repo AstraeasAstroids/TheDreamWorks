@@ -44,11 +44,6 @@ namespace TheDreamWorks
 
         }
 
-        private ListBox GetListBox1()
-        {
-            return listBox1;
-        }
-
         private void button1MembersGo_Click(object sender, EventArgs e)
         {
             if (memberList.Count > 0) { return; }
@@ -59,6 +54,9 @@ namespace TheDreamWorks
                 memberList.Add(textBox_Member1.Text);
                 FamilyMembers Member = new FamilyMembers(textBox_Member1.Text);
                 family.Add(Member);
+                label_Member1.Text = textBox_Member1.Text;
+                label_Member1.ForeColor = Color.Black;
+
             }
             else
             {
@@ -146,103 +144,7 @@ namespace TheDreamWorks
                 textBox_Member9.Visible = false;
             }
 
-
             toolStripCombox_MemberList.Items.AddRange(memberList.ToArray());
-            {
-
-            }
-
-
-
-        }
-        private void button2_Click(object sender, EventArgs e)
-        {
-            button2.BackColor = Color.LightCyan;
-            AssignChore(toolStripCombox_MemberList.SelectedItem.ToString());
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            button3.BackColor = Color.LightCyan;
-            AssignChore(toolStripCombox_MemberList.SelectedItem.ToString());
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            button4.BackColor = Color.LightCyan;
-            AssignChore(toolStripCombox_MemberList.SelectedItem.ToString());
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            button5.BackColor = Color.LightCyan;
-            AssignChore(toolStripCombox_MemberList.SelectedItem.ToString());
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            button6.BackColor = Color.LightCyan;
-            AssignChore(toolStripCombox_MemberList.SelectedItem.ToString());
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            button7.BackColor = Color.LightCyan;
-            AssignChore(toolStripCombox_MemberList.SelectedItem.ToString());
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            button8.BackColor = Color.LightCyan;
-            AssignChore(toolStripCombox_MemberList.SelectedItem.ToString());
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-            button9.BackColor = Color.LightCyan;
-            AssignChore(toolStripCombox_MemberList.SelectedItem.ToString());
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-            button10.BackColor = Color.LightCyan;
-            AssignChore(toolStripCombox_MemberList.SelectedItem.ToString());
-        }
-
-        private void button11_Click(object sender, EventArgs e)
-        {
-            button11.BackColor = Color.LightCyan;
-            AssignChore(toolStripCombox_MemberList.SelectedItem.ToString());
-        }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-            button12.BackColor = Color.LightCyan;
-            AssignChore(toolStripCombox_MemberList.SelectedItem.ToString());
-        }
-
-        private void button13_Click(object sender, EventArgs e)
-        {
-            button13.BackColor = Color.LightCyan;
-            AssignChore(toolStripCombox_MemberList.SelectedItem.ToString());
-        }
-
-        private void button14_Click(object sender, EventArgs e)
-        {
-            button14.BackColor = Color.LightCyan;
-            AssignChore(toolStripCombox_MemberList.SelectedItem.ToString());
-        }
-
-        private void button15_Click(object sender, EventArgs e)
-        {
-            button15.BackColor = Color.LightCyan;
-            AssignChore(toolStripCombox_MemberList.SelectedItem.ToString());
-        }
-
-        private void button16_Click(object sender, EventArgs e)
-        {
-            button16.BackColor = Color.LightCyan;
-            AssignChore(toolStripCombox_MemberList.SelectedItem.ToString());
 
         }
 
@@ -273,15 +175,26 @@ namespace TheDreamWorks
             }
         }
 
+        private void DeleteChore(string chore)
+        {
+            foreach (var member in family)
+            {
+                if (member.name == toolStripCombox_MemberList.SelectedItem.ToString())
+                {
+                    member.ChoreList.Remove(chore);
+                }
+            }
+        }
+        //----- CHORES TAB -----//
         private void toolStripCombox_MemberList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (toolStripCombox_MemberList.SelectedIndex > 0)
+            if (toolStripCombox_MemberList.SelectedIndex > -1)
             {
                 foreach (Control control in groupBox2.Controls)
                 {
                     if (control is Button button)
                     {
-                        button.BackColor = Color.White;
+                        control.BackColor = Color.MistyRose;
                     }
                 }
                 groupBox2.Enabled = true;
@@ -292,14 +205,11 @@ namespace TheDreamWorks
                     {
                         foreach (var chore in member.ChoreList)
                         {
-                            //iterate through each of the chores buttons
-                            //if match change button color
-
-                            foreach(Control control in groupBox2.Controls)
+                            foreach (Control control in groupBox2.Controls)
                             {
-                                if (control is Button button)
+                                if (control is Button button && control.Text == chore)
                                 {
-                                    button.BackColor = Color.Azure;
+                                    control.BackColor = Color.AliceBlue;
                                 }
                             }
 
@@ -307,8 +217,138 @@ namespace TheDreamWorks
                     }
                 }
             }
-           
+
         }
+
+
+
+
+        //------ CHORES BUTTON HANDLERS -----//
+        private void button_Laundry_Click(object sender, EventArgs e)
+        {
+            if (button_Laundry.BackColor == Color.AliceBlue)
+            {
+                button_Laundry.BackColor = SystemColors.ControlDark;
+                DeleteChore(button_Laundry.Text);
+
+            }
+            else
+            {
+                button_Laundry.BackColor = Color.AliceBlue;
+                AssignChore(button_Laundry.Text.ToString());
+            }
+
+        }
+        private void button_Trash_Click(object sender, EventArgs e)
+        {
+            if (button_Trash.BackColor == Color.AliceBlue)
+            {
+                button_Trash.BackColor = SystemColors.ControlDark;
+                DeleteChore(button_Trash.Text);
+
+            }
+            else
+            {
+                button_Trash.BackColor = Color.AliceBlue;
+                AssignChore(button_Trash.Text.ToString());
+            }
+        }
+
+        private void button_Dishes_Click(object sender, EventArgs e)
+        {
+            if (button_Dishes.BackColor == Color.AliceBlue)
+            {
+                button_Dishes.BackColor = SystemColors.ControlDark;
+                DeleteChore(button_Dishes.Text);
+
+            }
+            else
+            {
+                button_Dishes.BackColor = Color.AliceBlue;
+                AssignChore(button_Dishes.Text.ToString());
+            }
+        }
+        private void button_Disinfect_Click(object sender, EventArgs e)
+        {
+            if (button_Disinfect.BackColor == Color.AliceBlue)
+            {
+                button_Disinfect.BackColor = SystemColors.ControlDark;
+                DeleteChore(button_Disinfect.Text);
+
+            }
+            else
+            {
+                button_Dishes.BackColor = Color.AliceBlue;
+                AssignChore(button_Dishes.Text.ToString());
+            }
+        }
+
+        private void button_LitterBox_Click(object sender, EventArgs e)
+        {
+            if (button_Dishes.BackColor == Color.AliceBlue)
+            {
+                button_LitterBox.BackColor = SystemColors.ControlDark;
+                DeleteChore(button_Dishes.Text);
+
+            }
+            else
+            {
+                button_Dishes.BackColor = Color.AliceBlue;
+                AssignChore(button_Dishes.Text.ToString());
+            }
+        }
+
+        private void button_Vacuum_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_Organize_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_Mop_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_BrushUp_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_WaterPlants_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_Homework_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_Dust_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_Shower_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_FeedAnimals_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_Other_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 
 }
