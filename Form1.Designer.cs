@@ -32,9 +32,17 @@
             miniToolStrip = new ToolStrip();
             tabPage3 = new TabPage();
             panel3 = new Panel();
+            pictureBox11 = new PictureBox();
+            pictureBox10 = new PictureBox();
+            pictureBox9 = new PictureBox();
+            pictureBox8 = new PictureBox();
+            pictureBox7 = new PictureBox();
+            pictureBox13 = new PictureBox();
+            pictureBox6 = new PictureBox();
             pictureBox5 = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox2 = new PictureBox();
+            pictureBox1 = new PictureBox();
             panel_RewardsMembers = new Panel();
             label_Member1 = new Label();
             Label_Member2 = new Label();
@@ -50,7 +58,6 @@
             label2 = new Label();
             label1 = new Label();
             pictureBox3 = new PictureBox();
-            pictureBox1 = new PictureBox();
             richTextBox2 = new RichTextBox();
             progressBar9 = new ProgressBar();
             progressBar8 = new ProgressBar();
@@ -63,6 +70,7 @@
             progressBar1 = new ProgressBar();
             tabPage2 = new TabPage();
             panel2 = new Panel();
+            dateTimePicker1 = new DateTimePicker();
             groupBox2 = new GroupBox();
             button_Other = new Button();
             button_FeedAnimals = new Button();
@@ -93,18 +101,24 @@
             textBox_Member3 = new TextBox();
             textBox_Member2 = new TextBox();
             textBox_Member1 = new TextBox();
-            dateTimePicker1 = new DateTimePicker();
             richTextBox1 = new RichTextBox();
             button1MembersGo = new Button();
             tabControl1 = new TabControl();
             tabPage3.SuspendLayout();
             panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel_RewardsMembers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tabPage2.SuspendLayout();
             panel2.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -142,16 +156,23 @@
             // panel3
             // 
             panel3.BackColor = Color.Silver;
+            panel3.Controls.Add(pictureBox11);
+            panel3.Controls.Add(pictureBox10);
+            panel3.Controls.Add(pictureBox9);
+            panel3.Controls.Add(pictureBox8);
+            panel3.Controls.Add(pictureBox7);
+            panel3.Controls.Add(pictureBox13);
+            panel3.Controls.Add(pictureBox6);
             panel3.Controls.Add(pictureBox5);
             panel3.Controls.Add(pictureBox4);
             panel3.Controls.Add(pictureBox2);
+            panel3.Controls.Add(pictureBox1);
             panel3.Controls.Add(panel_RewardsMembers);
             panel3.Controls.Add(label4);
             panel3.Controls.Add(label3);
             panel3.Controls.Add(label2);
             panel3.Controls.Add(label1);
             panel3.Controls.Add(pictureBox3);
-            panel3.Controls.Add(pictureBox1);
             panel3.Controls.Add(richTextBox2);
             panel3.Controls.Add(progressBar9);
             panel3.Controls.Add(progressBar8);
@@ -167,32 +188,104 @@
             panel3.Size = new Size(1275, 507);
             panel3.TabIndex = 0;
             // 
+            // pictureBox11
+            // 
+            pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
+            pictureBox11.Location = new Point(677, 439);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(28, 31);
+            pictureBox11.TabIndex = 45;
+            pictureBox11.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
+            pictureBox10.Location = new Point(647, 439);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(28, 31);
+            pictureBox10.TabIndex = 44;
+            pictureBox10.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
+            pictureBox9.Location = new Point(616, 439);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(28, 31);
+            pictureBox9.TabIndex = 43;
+            pictureBox9.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
+            pictureBox8.Location = new Point(525, 439);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(28, 31);
+            pictureBox8.TabIndex = 42;
+            pictureBox8.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
+            pictureBox7.Location = new Point(491, 439);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(28, 31);
+            pictureBox7.TabIndex = 41;
+            pictureBox7.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            pictureBox13.Image = (Image)resources.GetObject("pictureBox13.Image");
+            pictureBox13.Location = new Point(349, 439);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(28, 31);
+            pictureBox13.TabIndex = 40;
+            pictureBox13.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(967, 64);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(48, 59);
+            pictureBox6.TabIndex = 33;
+            pictureBox6.TabStop = false;
+            // 
             // pictureBox5
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(19, 298);
+            pictureBox5.Location = new Point(912, 64);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(108, 109);
-            pictureBox5.TabIndex = 31;
+            pictureBox5.Size = new Size(49, 59);
+            pictureBox5.TabIndex = 32;
             pictureBox5.TabStop = false;
             // 
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(111, 150);
+            pictureBox4.Location = new Point(940, 185);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(108, 109);
-            pictureBox4.TabIndex = 30;
+            pictureBox4.Size = new Size(49, 54);
+            pictureBox4.TabIndex = 31;
             pictureBox4.TabStop = false;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(22, 150);
+            pictureBox2.Location = new Point(885, 185);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(108, 109);
-            pictureBox2.TabIndex = 29;
+            pictureBox2.Size = new Size(49, 54);
+            pictureBox2.TabIndex = 30;
             pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(912, 311);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(49, 55);
+            pictureBox1.TabIndex = 29;
+            pictureBox1.TabStop = false;
             // 
             // panel_RewardsMembers
             // 
@@ -205,16 +298,16 @@
             panel_RewardsMembers.Controls.Add(label_Member7);
             panel_RewardsMembers.Controls.Add(label_Member5);
             panel_RewardsMembers.Controls.Add(label_Member6);
-            panel_RewardsMembers.Location = new Point(871, 40);
+            panel_RewardsMembers.Location = new Point(88, 51);
             panel_RewardsMembers.Name = "panel_RewardsMembers";
-            panel_RewardsMembers.Size = new Size(207, 403);
+            panel_RewardsMembers.Size = new Size(120, 354);
             panel_RewardsMembers.TabIndex = 28;
             // 
             // label_Member1
             // 
             label_Member1.AutoSize = true;
             label_Member1.ForeColor = Color.Silver;
-            label_Member1.Location = new Point(3, 32);
+            label_Member1.Location = new Point(66, 23);
             label_Member1.Name = "label_Member1";
             label_Member1.Size = new Size(77, 21);
             label_Member1.TabIndex = 18;
@@ -224,7 +317,7 @@
             // 
             Label_Member2.AutoSize = true;
             Label_Member2.ForeColor = Color.Silver;
-            Label_Member2.Location = new Point(3, 73);
+            Label_Member2.Location = new Point(66, 61);
             Label_Member2.Name = "Label_Member2";
             Label_Member2.Size = new Size(82, 21);
             Label_Member2.TabIndex = 19;
@@ -234,7 +327,7 @@
             // 
             label_Member9.AutoSize = true;
             label_Member9.ForeColor = Color.Silver;
-            label_Member9.Location = new Point(-2, 344);
+            label_Member9.Location = new Point(61, 322);
             label_Member9.Name = "label_Member9";
             label_Member9.Size = new Size(82, 21);
             label_Member9.TabIndex = 26;
@@ -244,7 +337,7 @@
             // 
             label_Member3.AutoSize = true;
             label_Member3.ForeColor = Color.Silver;
-            label_Member3.Location = new Point(3, 108);
+            label_Member3.Location = new Point(66, 97);
             label_Member3.Name = "label_Member3";
             label_Member3.Size = new Size(82, 21);
             label_Member3.TabIndex = 20;
@@ -254,7 +347,7 @@
             // 
             label_Member8.AutoSize = true;
             label_Member8.ForeColor = Color.Silver;
-            label_Member8.Location = new Point(3, 307);
+            label_Member8.Location = new Point(66, 285);
             label_Member8.Name = "label_Member8";
             label_Member8.Size = new Size(82, 21);
             label_Member8.TabIndex = 25;
@@ -264,7 +357,7 @@
             // 
             label_Member4.AutoSize = true;
             label_Member4.ForeColor = Color.Silver;
-            label_Member4.Location = new Point(3, 141);
+            label_Member4.Location = new Point(66, 134);
             label_Member4.Name = "label_Member4";
             label_Member4.Size = new Size(82, 21);
             label_Member4.TabIndex = 21;
@@ -274,7 +367,7 @@
             // 
             label_Member7.AutoSize = true;
             label_Member7.ForeColor = Color.Silver;
-            label_Member7.Location = new Point(-2, 270);
+            label_Member7.Location = new Point(66, 248);
             label_Member7.Name = "label_Member7";
             label_Member7.Size = new Size(81, 21);
             label_Member7.TabIndex = 24;
@@ -284,7 +377,7 @@
             // 
             label_Member5.AutoSize = true;
             label_Member5.ForeColor = Color.Silver;
-            label_Member5.Location = new Point(3, 180);
+            label_Member5.Location = new Point(66, 172);
             label_Member5.Name = "label_Member5";
             label_Member5.Size = new Size(82, 21);
             label_Member5.TabIndex = 22;
@@ -294,7 +387,7 @@
             // 
             label_Member6.AutoSize = true;
             label_Member6.ForeColor = Color.Silver;
-            label_Member6.Location = new Point(0, 233);
+            label_Member6.Location = new Point(66, 211);
             label_Member6.Name = "label_Member6";
             label_Member6.Size = new Size(82, 21);
             label_Member6.TabIndex = 23;
@@ -303,38 +396,38 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(158, 395);
+            label4.Location = new Point(904, 126);
             label4.Name = "label4";
-            label4.Size = new Size(61, 21);
+            label4.Size = new Size(65, 21);
             label4.TabIndex = 17;
-            label4.Text = "40-50";
+            label4.Text = "61-80+";
             label4.Click += label4_Click;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(109, 271);
+            label3.Location = new Point(899, 255);
             label3.Name = "label3";
-            label3.Size = new Size(61, 21);
+            label3.Size = new Size(56, 21);
             label3.TabIndex = 16;
-            label3.Text = "20-40";
+            label3.Text = "41-60";
             label3.Click += label3_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(74, 123);
+            label2.Location = new Point(905, 370);
             label2.Name = "label2";
-            label2.Size = new Size(56, 21);
+            label2.Size = new Size(61, 21);
             label2.TabIndex = 15;
-            label2.Text = "10-20";
+            label2.Text = "20-40";
             label2.Click += label2_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("MV Boli", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(497, 36);
+            label1.Location = new Point(444, 36);
             label1.Name = "label1";
             label1.Size = new Size(185, 25);
             label1.TabIndex = 14;
@@ -342,26 +435,18 @@
             // 
             // pictureBox3
             // 
-            pictureBox3.Location = new Point(19, 308);
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(854, 64);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(182, 95);
+            pictureBox3.Size = new Size(52, 59);
             pictureBox3.TabIndex = 13;
             pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(35, 23);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(108, 109);
-            pictureBox1.TabIndex = 11;
-            pictureBox1.TabStop = false;
             // 
             // richTextBox2
             // 
             richTextBox2.BackColor = SystemColors.ActiveCaption;
             richTextBox2.Font = new Font("MV Boli", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            richTextBox2.Location = new Point(267, 409);
+            richTextBox2.Location = new Point(214, 399);
             richTextBox2.Name = "richTextBox2";
             richTextBox2.Size = new Size(598, 34);
             richTextBox2.TabIndex = 9;
@@ -369,63 +454,63 @@
             // 
             // progressBar9
             // 
-            progressBar9.Location = new Point(267, 372);
+            progressBar9.Location = new Point(214, 362);
             progressBar9.Name = "progressBar9";
             progressBar9.Size = new Size(598, 31);
             progressBar9.TabIndex = 8;
             // 
             // progressBar8
             // 
-            progressBar8.Location = new Point(267, 335);
+            progressBar8.Location = new Point(214, 325);
             progressBar8.Name = "progressBar8";
             progressBar8.Size = new Size(598, 31);
             progressBar8.TabIndex = 7;
             // 
             // progressBar7
             // 
-            progressBar7.Location = new Point(267, 298);
+            progressBar7.Location = new Point(214, 288);
             progressBar7.Name = "progressBar7";
             progressBar7.Size = new Size(598, 31);
             progressBar7.TabIndex = 6;
             // 
             // progressBar6
             // 
-            progressBar6.Location = new Point(267, 261);
+            progressBar6.Location = new Point(214, 251);
             progressBar6.Name = "progressBar6";
             progressBar6.Size = new Size(598, 31);
             progressBar6.TabIndex = 5;
             // 
             // progressBar5
             // 
-            progressBar5.Location = new Point(267, 224);
+            progressBar5.Location = new Point(214, 212);
             progressBar5.Name = "progressBar5";
             progressBar5.Size = new Size(598, 31);
             progressBar5.TabIndex = 4;
             // 
             // progressBar4
             // 
-            progressBar4.Location = new Point(267, 187);
+            progressBar4.Location = new Point(214, 175);
             progressBar4.Name = "progressBar4";
             progressBar4.Size = new Size(598, 31);
             progressBar4.TabIndex = 3;
             // 
             // progressBar3
             // 
-            progressBar3.Location = new Point(267, 150);
+            progressBar3.Location = new Point(214, 138);
             progressBar3.Name = "progressBar3";
             progressBar3.Size = new Size(598, 31);
             progressBar3.TabIndex = 2;
             // 
             // progressBar2
             // 
-            progressBar2.Location = new Point(267, 113);
+            progressBar2.Location = new Point(214, 101);
             progressBar2.Name = "progressBar2";
             progressBar2.Size = new Size(598, 31);
             progressBar2.TabIndex = 1;
             // 
             // progressBar1
             // 
-            progressBar1.Location = new Point(267, 76);
+            progressBar1.Location = new Point(214, 64);
             progressBar1.Name = "progressBar1";
             progressBar1.Size = new Size(598, 31);
             progressBar1.TabIndex = 0;
@@ -446,12 +531,20 @@
             // panel2
             // 
             panel2.BackColor = Color.RosyBrown;
+            panel2.Controls.Add(dateTimePicker1);
             panel2.Controls.Add(groupBox2);
             panel2.ForeColor = SystemColors.WindowText;
             panel2.Location = new Point(9, 33);
             panel2.Name = "panel2";
             panel2.Size = new Size(1176, 513);
             panel2.TabIndex = 2;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(337, 33);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(502, 33);
+            dateTimePicker1.TabIndex = 3;
             // 
             // groupBox2
             // 
@@ -471,12 +564,12 @@
             groupBox2.Controls.Add(button_Trash);
             groupBox2.Controls.Add(button_Laundry);
             groupBox2.Enabled = false;
-            groupBox2.Location = new Point(203, 42);
+            groupBox2.Location = new Point(224, 94);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(728, 407);
             groupBox2.TabIndex = 0;
             groupBox2.TabStop = false;
-            groupBox2.Text = "Daily ChoreList";
+            groupBox2.Text = "Daily Duties";
             // 
             // button_Other
             // 
@@ -674,7 +767,6 @@
             // 
             panel1.BackColor = Color.MediumTurquoise;
             panel1.Controls.Add(groupBox1);
-            panel1.Controls.Add(dateTimePicker1);
             panel1.Controls.Add(richTextBox1);
             panel1.Controls.Add(button1MembersGo);
             panel1.Font = new Font("MV Boli", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -694,7 +786,7 @@
             groupBox1.Controls.Add(textBox_Member3);
             groupBox1.Controls.Add(textBox_Member2);
             groupBox1.Controls.Add(textBox_Member1);
-            groupBox1.Location = new Point(326, 177);
+            groupBox1.Location = new Point(326, 163);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(495, 282);
             groupBox1.TabIndex = 3;
@@ -773,19 +865,12 @@
             textBox_Member1.Size = new Size(100, 46);
             textBox_Member1.TabIndex = 0;
             // 
-            // dateTimePicker1
-            // 
-            dateTimePicker1.Location = new Point(319, 19);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(502, 46);
-            dateTimePicker1.TabIndex = 2;
-            // 
             // richTextBox1
             // 
             richTextBox1.Anchor = AnchorStyles.Top;
             richTextBox1.BackColor = Color.MediumPurple;
             richTextBox1.Font = new Font("MV Boli", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            richTextBox1.Location = new Point(326, 71);
+            richTextBox1.Location = new Point(326, 38);
             richTextBox1.Name = "richTextBox1";
             richTextBox1.Size = new Size(495, 87);
             richTextBox1.TabIndex = 1;
@@ -825,13 +910,20 @@
             tabPage3.ResumeLayout(false);
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel_RewardsMembers.ResumeLayout(false);
             panel_RewardsMembers.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             tabPage2.ResumeLayout(false);
             tabPage2.PerformLayout();
             panel2.ResumeLayout(false);
@@ -865,7 +957,6 @@
         private Label label2;
         private Label label1;
         private PictureBox pictureBox3;
-        private PictureBox pictureBox1;
         private RichTextBox richTextBox2;
         private ProgressBar progressBar9;
         private ProgressBar progressBar8;
@@ -908,13 +999,21 @@
         private TextBox textBox_Member3;
         private TextBox textBox_Member2;
         private TextBox textBox_Member1;
-        private DateTimePicker dateTimePicker1;
         private RichTextBox richTextBox1;
         private Button button1MembersGo;
         private TabControl tabControl1;
         private Panel panel_RewardsMembers;
+        private DateTimePicker dateTimePicker1;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox6;
         private PictureBox pictureBox5;
         private PictureBox pictureBox4;
-        private PictureBox pictureBox2;
+        private PictureBox pictureBox13;
+        private PictureBox pictureBox11;
+        private PictureBox pictureBox10;
+        private PictureBox pictureBox9;
+        private PictureBox pictureBox8;
+        private PictureBox pictureBox7;
     }
 }
