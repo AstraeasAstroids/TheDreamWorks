@@ -32,6 +32,7 @@
             miniToolStrip = new ToolStrip();
             tabPage3 = new TabPage();
             panel3 = new Panel();
+            dateTimePicker_Rewards = new DateTimePicker();
             pictureBox11 = new PictureBox();
             pictureBox10 = new PictureBox();
             pictureBox9 = new PictureBox();
@@ -70,7 +71,6 @@
             progressBar1 = new ProgressBar();
             tabPage2 = new TabPage();
             panel2 = new Panel();
-            dateTimePicker1 = new DateTimePicker();
             groupBox2 = new GroupBox();
             button_Other = new Button();
             button_FeedAnimals = new Button();
@@ -104,6 +104,7 @@
             richTextBox1 = new RichTextBox();
             button1MembersGo = new Button();
             tabControl1 = new TabControl();
+            dateTimePicker_ChoreList = new DateTimePicker();
             tabPage3.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
@@ -156,6 +157,7 @@
             // panel3
             // 
             panel3.BackColor = Color.Silver;
+            panel3.Controls.Add(dateTimePicker_Rewards);
             panel3.Controls.Add(pictureBox11);
             panel3.Controls.Add(pictureBox10);
             panel3.Controls.Add(pictureBox9);
@@ -187,6 +189,13 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(1275, 507);
             panel3.TabIndex = 0;
+            // 
+            // dateTimePicker_Rewards
+            // 
+            dateTimePicker_Rewards.Location = new Point(829, 449);
+            dateTimePicker_Rewards.Name = "dateTimePicker_Rewards";
+            dateTimePicker_Rewards.Size = new Size(249, 33);
+            dateTimePicker_Rewards.TabIndex = 46;
             // 
             // pictureBox11
             // 
@@ -401,7 +410,6 @@
             label4.Size = new Size(65, 21);
             label4.TabIndex = 17;
             label4.Text = "61-80+";
-            label4.Click += label4_Click;
             // 
             // label3
             // 
@@ -411,7 +419,6 @@
             label3.Size = new Size(56, 21);
             label3.TabIndex = 16;
             label3.Text = "41-60";
-            label3.Click += label3_Click;
             // 
             // label2
             // 
@@ -421,13 +428,12 @@
             label2.Size = new Size(61, 21);
             label2.TabIndex = 15;
             label2.Text = "20-40";
-            label2.Click += label2_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("MV Boli", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(444, 36);
+            label1.Location = new Point(441, 22);
             label1.Name = "label1";
             label1.Size = new Size(185, 25);
             label1.TabIndex = 14;
@@ -454,6 +460,7 @@
             // 
             // progressBar9
             // 
+            progressBar9.ForeColor = Color.Plum;
             progressBar9.Location = new Point(214, 362);
             progressBar9.Name = "progressBar9";
             progressBar9.Size = new Size(598, 31);
@@ -461,6 +468,7 @@
             // 
             // progressBar8
             // 
+            progressBar8.ForeColor = Color.Plum;
             progressBar8.Location = new Point(214, 325);
             progressBar8.Name = "progressBar8";
             progressBar8.Size = new Size(598, 31);
@@ -468,6 +476,7 @@
             // 
             // progressBar7
             // 
+            progressBar7.ForeColor = Color.Plum;
             progressBar7.Location = new Point(214, 288);
             progressBar7.Name = "progressBar7";
             progressBar7.Size = new Size(598, 31);
@@ -475,6 +484,7 @@
             // 
             // progressBar6
             // 
+            progressBar6.ForeColor = Color.Plum;
             progressBar6.Location = new Point(214, 251);
             progressBar6.Name = "progressBar6";
             progressBar6.Size = new Size(598, 31);
@@ -482,6 +492,7 @@
             // 
             // progressBar5
             // 
+            progressBar5.ForeColor = Color.Plum;
             progressBar5.Location = new Point(214, 212);
             progressBar5.Name = "progressBar5";
             progressBar5.Size = new Size(598, 31);
@@ -489,6 +500,7 @@
             // 
             // progressBar4
             // 
+            progressBar4.ForeColor = Color.Plum;
             progressBar4.Location = new Point(214, 175);
             progressBar4.Name = "progressBar4";
             progressBar4.Size = new Size(598, 31);
@@ -496,6 +508,7 @@
             // 
             // progressBar3
             // 
+            progressBar3.ForeColor = Color.Plum;
             progressBar3.Location = new Point(214, 138);
             progressBar3.Name = "progressBar3";
             progressBar3.Size = new Size(598, 31);
@@ -503,6 +516,7 @@
             // 
             // progressBar2
             // 
+            progressBar2.ForeColor = Color.Plum;
             progressBar2.Location = new Point(214, 101);
             progressBar2.Name = "progressBar2";
             progressBar2.Size = new Size(598, 31);
@@ -510,6 +524,7 @@
             // 
             // progressBar1
             // 
+            progressBar1.ForeColor = Color.Plum;
             progressBar1.Location = new Point(214, 64);
             progressBar1.Name = "progressBar1";
             progressBar1.Size = new Size(598, 31);
@@ -531,20 +546,13 @@
             // panel2
             // 
             panel2.BackColor = Color.RosyBrown;
-            panel2.Controls.Add(dateTimePicker1);
+            panel2.Controls.Add(dateTimePicker_ChoreList);
             panel2.Controls.Add(groupBox2);
             panel2.ForeColor = SystemColors.WindowText;
             panel2.Location = new Point(9, 33);
             panel2.Name = "panel2";
             panel2.Size = new Size(1176, 513);
             panel2.TabIndex = 2;
-            // 
-            // dateTimePicker1
-            // 
-            dateTimePicker1.Location = new Point(337, 33);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(502, 33);
-            dateTimePicker1.TabIndex = 3;
             // 
             // groupBox2
             // 
@@ -899,6 +907,13 @@
             tabControl1.Size = new Size(1260, 626);
             tabControl1.TabIndex = 0;
             // 
+            // dateTimePicker_ChoreList
+            // 
+            dateTimePicker_ChoreList.Location = new Point(397, 41);
+            dateTimePicker_ChoreList.Name = "dateTimePicker_ChoreList";
+            dateTimePicker_ChoreList.Size = new Size(373, 33);
+            dateTimePicker_ChoreList.TabIndex = 47;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1003,7 +1018,7 @@
         private Button button1MembersGo;
         private TabControl tabControl1;
         private Panel panel_RewardsMembers;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dateTimePicker_Rewards;
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
         private PictureBox pictureBox6;
@@ -1015,5 +1030,6 @@
         private PictureBox pictureBox9;
         private PictureBox pictureBox8;
         private PictureBox pictureBox7;
+        private DateTimePicker dateTimePicker_ChoreList;
     }
 }

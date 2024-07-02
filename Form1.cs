@@ -1,14 +1,16 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using System.Security.Cryptography.X509Certificates;
 
 namespace TheDreamWorks
 {
     
     
     public struct FamilyMembers
-        {
+    {
         public string name;
-        public List<string> ChoreList = new List<string>();
+        public List<Chore> ChoreList = new List<Chore>();
+
 
         public FamilyMembers(string Name)
         {
@@ -25,24 +27,15 @@ namespace TheDreamWorks
         public object ChoresButtons { get; private set; }
         public Form1()
 
+
         {
             InitializeComponent();
-        }
+                    }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
+        //-----DT PICKER -----//
+        DateTime dt = new DateTime();
+        TimeSpan tspan = new TimeSpan(7, 0, 0, 0);
+        TimeSpan instanceName = new TimeSpan();                
         //----- TAB 1 THE MEMBERS-----//
         private void button1MembersGo_Click(object sender, EventArgs e)
         {
@@ -180,24 +173,30 @@ namespace TheDreamWorks
             memberList = new List<MemberListBinding>();
         }
 
-        private void AssignChore(string chore)
+        private void AssignChore(string choreName)
         {
             foreach (var member in family)
             {
                 if (member.name == toolStripCombox_MemberList.SelectedItem.ToString())
                 {
-                    member.ChoreList.Add(chore);
+                    DateTime dtChore = dateTimePicker_ChoreList.Value; 
+                    Chore newChore = new Chore(choreName, dtChore);
+                    member.ChoreList.Add(newChore);
+
                 }
             }
         }
 
-        private void DeleteChore(string chore)
+        private void DeleteChore(string choreName)
         {
             foreach (var member in family)
             {
                 if (member.name == toolStripCombox_MemberList.SelectedItem.ToString())
                 {
-                    member.ChoreList.Remove(chore);
+                    DateTime dtChore = dateTimePicker_ChoreList.Value;
+                    Chore newChore = new Chore(choreName, dtChore);
+                    member.ChoreList.Remove(newChore);
+                   
                 }
             }
         }
@@ -223,7 +222,7 @@ namespace TheDreamWorks
                         {
                             foreach (Control control in groupBox2.Controls)
                             {
-                                if (control is Button button && control.Text == chore)
+                                if (control is Button button && control.Text == chore.ChoreName)
                                 {
                                     control.BackColor = Color.AliceBlue;
                                 }
