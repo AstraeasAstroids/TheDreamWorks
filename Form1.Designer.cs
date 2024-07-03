@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             miniToolStrip = new ToolStrip();
             tabPage3 = new TabPage();
@@ -60,17 +61,10 @@
             label1 = new Label();
             pictureBox3 = new PictureBox();
             richTextBox2 = new RichTextBox();
-            progressBar9 = new ProgressBar();
-            progressBar8 = new ProgressBar();
-            progressBar7 = new ProgressBar();
-            progressBar6 = new ProgressBar();
-            progressBar5 = new ProgressBar();
-            progressBar4 = new ProgressBar();
-            progressBar3 = new ProgressBar();
-            progressBar2 = new ProgressBar();
-            progressBar1 = new ProgressBar();
+            progressBar_Member1 = new ProgressBar();
             tabPage2 = new TabPage();
             panel2 = new Panel();
+            dateTimePicker_ChoreList = new DateTimePicker();
             groupBox2 = new GroupBox();
             button_Other = new Button();
             button_FeedAnimals = new Button();
@@ -104,7 +98,8 @@
             richTextBox1 = new RichTextBox();
             button1MembersGo = new Button();
             tabControl1 = new TabControl();
-            dateTimePicker_ChoreList = new DateTimePicker();
+            choreBindingSource = new BindingSource(components);
+            familyMembersBindingSource = new BindingSource(components);
             tabPage3.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
@@ -128,6 +123,8 @@
             panel1.SuspendLayout();
             groupBox1.SuspendLayout();
             tabControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)choreBindingSource).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)familyMembersBindingSource).BeginInit();
             SuspendLayout();
             // 
             // miniToolStrip
@@ -158,6 +155,7 @@
             // 
             panel3.BackColor = Color.Silver;
             panel3.Controls.Add(dateTimePicker_Rewards);
+            panel3.Controls.Add(progressBar_Member1);
             panel3.Controls.Add(pictureBox11);
             panel3.Controls.Add(pictureBox10);
             panel3.Controls.Add(pictureBox9);
@@ -176,15 +174,6 @@
             panel3.Controls.Add(label1);
             panel3.Controls.Add(pictureBox3);
             panel3.Controls.Add(richTextBox2);
-            panel3.Controls.Add(progressBar9);
-            panel3.Controls.Add(progressBar8);
-            panel3.Controls.Add(progressBar7);
-            panel3.Controls.Add(progressBar6);
-            panel3.Controls.Add(progressBar5);
-            panel3.Controls.Add(progressBar4);
-            panel3.Controls.Add(progressBar3);
-            panel3.Controls.Add(progressBar2);
-            panel3.Controls.Add(progressBar1);
             panel3.Location = new Point(38, 31);
             panel3.Name = "panel3";
             panel3.Size = new Size(1275, 507);
@@ -192,7 +181,7 @@
             // 
             // dateTimePicker_Rewards
             // 
-            dateTimePicker_Rewards.Location = new Point(829, 449);
+            dateTimePicker_Rewards.Location = new Point(876, 454);
             dateTimePicker_Rewards.Name = "dateTimePicker_Rewards";
             dateTimePicker_Rewards.Size = new Size(249, 33);
             dateTimePicker_Rewards.TabIndex = 46;
@@ -458,77 +447,15 @@
             richTextBox2.TabIndex = 9;
             richTextBox2.Text = "  5 - 10 - 20 - 30 - 40 - 50 - 60 - 70 - 80 - 90 - 100";
             // 
-            // progressBar9
+            // progressBar_Member1
             // 
-            progressBar9.ForeColor = Color.Plum;
-            progressBar9.Location = new Point(214, 362);
-            progressBar9.Name = "progressBar9";
-            progressBar9.Size = new Size(598, 31);
-            progressBar9.TabIndex = 8;
-            // 
-            // progressBar8
-            // 
-            progressBar8.ForeColor = Color.Plum;
-            progressBar8.Location = new Point(214, 325);
-            progressBar8.Name = "progressBar8";
-            progressBar8.Size = new Size(598, 31);
-            progressBar8.TabIndex = 7;
-            // 
-            // progressBar7
-            // 
-            progressBar7.ForeColor = Color.Plum;
-            progressBar7.Location = new Point(214, 288);
-            progressBar7.Name = "progressBar7";
-            progressBar7.Size = new Size(598, 31);
-            progressBar7.TabIndex = 6;
-            // 
-            // progressBar6
-            // 
-            progressBar6.ForeColor = Color.Plum;
-            progressBar6.Location = new Point(214, 251);
-            progressBar6.Name = "progressBar6";
-            progressBar6.Size = new Size(598, 31);
-            progressBar6.TabIndex = 5;
-            // 
-            // progressBar5
-            // 
-            progressBar5.ForeColor = Color.Plum;
-            progressBar5.Location = new Point(214, 212);
-            progressBar5.Name = "progressBar5";
-            progressBar5.Size = new Size(598, 31);
-            progressBar5.TabIndex = 4;
-            // 
-            // progressBar4
-            // 
-            progressBar4.ForeColor = Color.Plum;
-            progressBar4.Location = new Point(214, 175);
-            progressBar4.Name = "progressBar4";
-            progressBar4.Size = new Size(598, 31);
-            progressBar4.TabIndex = 3;
-            // 
-            // progressBar3
-            // 
-            progressBar3.ForeColor = Color.Plum;
-            progressBar3.Location = new Point(214, 138);
-            progressBar3.Name = "progressBar3";
-            progressBar3.Size = new Size(598, 31);
-            progressBar3.TabIndex = 2;
-            // 
-            // progressBar2
-            // 
-            progressBar2.ForeColor = Color.Plum;
-            progressBar2.Location = new Point(214, 101);
-            progressBar2.Name = "progressBar2";
-            progressBar2.Size = new Size(598, 31);
-            progressBar2.TabIndex = 1;
-            // 
-            // progressBar1
-            // 
-            progressBar1.ForeColor = Color.Plum;
-            progressBar1.Location = new Point(214, 64);
-            progressBar1.Name = "progressBar1";
-            progressBar1.Size = new Size(598, 31);
-            progressBar1.TabIndex = 0;
+            progressBar_Member1.ForeColor = Color.Plum;
+            progressBar_Member1.Location = new Point(214, 476);
+            progressBar_Member1.Maximum = 105;
+            progressBar_Member1.Name = "progressBar_Member1";
+            progressBar_Member1.Size = new Size(598, 31);
+            progressBar_Member1.TabIndex = 0;
+            progressBar_Member1.Click += progressBar_Member1_Click;
             // 
             // tabPage2
             // 
@@ -553,6 +480,13 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(1176, 513);
             panel2.TabIndex = 2;
+            // 
+            // dateTimePicker_ChoreList
+            // 
+            dateTimePicker_ChoreList.Location = new Point(397, 41);
+            dateTimePicker_ChoreList.Name = "dateTimePicker_ChoreList";
+            dateTimePicker_ChoreList.Size = new Size(373, 33);
+            dateTimePicker_ChoreList.TabIndex = 47;
             // 
             // groupBox2
             // 
@@ -907,12 +841,13 @@
             tabControl1.Size = new Size(1260, 626);
             tabControl1.TabIndex = 0;
             // 
-            // dateTimePicker_ChoreList
+            // choreBindingSource
             // 
-            dateTimePicker_ChoreList.Location = new Point(397, 41);
-            dateTimePicker_ChoreList.Name = "dateTimePicker_ChoreList";
-            dateTimePicker_ChoreList.Size = new Size(373, 33);
-            dateTimePicker_ChoreList.TabIndex = 47;
+            choreBindingSource.DataSource = typeof(Chore);
+            // 
+            // familyMembersBindingSource
+            // 
+            familyMembersBindingSource.DataSource = typeof(FamilyMembers);
             // 
             // Form1
             // 
@@ -950,6 +885,8 @@
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             tabControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)choreBindingSource).EndInit();
+            ((System.ComponentModel.ISupportInitialize)familyMembersBindingSource).EndInit();
             ResumeLayout(false);
         }
 
@@ -973,15 +910,7 @@
         private Label label1;
         private PictureBox pictureBox3;
         private RichTextBox richTextBox2;
-        private ProgressBar progressBar9;
-        private ProgressBar progressBar8;
-        private ProgressBar progressBar7;
-        private ProgressBar progressBar6;
-        private ProgressBar progressBar5;
-        private ProgressBar progressBar4;
-        private ProgressBar progressBar3;
-        private ProgressBar progressBar2;
-        private ProgressBar progressBar1;
+        private ProgressBar progressBar_Member1;
         private TabPage tabPage2;
         private Panel panel2;
         private GroupBox groupBox2;
@@ -1031,5 +960,7 @@
         private PictureBox pictureBox8;
         private PictureBox pictureBox7;
         private DateTimePicker dateTimePicker_ChoreList;
+        private BindingSource choreBindingSource;
+        private BindingSource familyMembersBindingSource;
     }
 }

@@ -10,12 +10,14 @@ namespace TheDreamWorks
     {
         public string ChoreName { get; }
         public DateTime DayofChore { get; }
+        public bool IsCompleted { get; }
 
 
         public Chore(string name, DateTime dt) 
         {
             ChoreName = name;
             DayofChore = dt;
+            IsCompleted = false;
         }
         
     }
