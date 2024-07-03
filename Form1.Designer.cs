@@ -34,6 +34,7 @@
             tabPage3 = new TabPage();
             panel3 = new Panel();
             dateTimePicker_Rewards = new DateTimePicker();
+            progressBar_Member1 = new ProgressBar();
             pictureBox11 = new PictureBox();
             pictureBox10 = new PictureBox();
             pictureBox9 = new PictureBox();
@@ -46,6 +47,15 @@
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             panel_RewardsMembers = new Panel();
+            radioButton9 = new RadioButton();
+            radioButton8 = new RadioButton();
+            radioButton7 = new RadioButton();
+            radioButton6 = new RadioButton();
+            radioButton5 = new RadioButton();
+            radioButton4 = new RadioButton();
+            radioButton3 = new RadioButton();
+            radioButton2 = new RadioButton();
+            radioButton1 = new RadioButton();
             label_Member1 = new Label();
             Label_Member2 = new Label();
             label_Member9 = new Label();
@@ -61,7 +71,6 @@
             label1 = new Label();
             pictureBox3 = new PictureBox();
             richTextBox2 = new RichTextBox();
-            progressBar_Member1 = new ProgressBar();
             tabPage2 = new TabPage();
             panel2 = new Panel();
             dateTimePicker_ChoreList = new DateTimePicker();
@@ -100,6 +109,8 @@
             tabControl1 = new TabControl();
             choreBindingSource = new BindingSource(components);
             familyMembersBindingSource = new BindingSource(components);
+            groupBox3 = new GroupBox();
+            label5_ChoresTotal = new Label();
             tabPage3.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
@@ -125,6 +136,7 @@
             tabControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)choreBindingSource).BeginInit();
             ((System.ComponentModel.ISupportInitialize)familyMembersBindingSource).BeginInit();
+            groupBox3.SuspendLayout();
             SuspendLayout();
             // 
             // miniToolStrip
@@ -154,6 +166,7 @@
             // panel3
             // 
             panel3.BackColor = Color.Silver;
+            panel3.Controls.Add(groupBox3);
             panel3.Controls.Add(dateTimePicker_Rewards);
             panel3.Controls.Add(progressBar_Member1);
             panel3.Controls.Add(pictureBox11);
@@ -181,10 +194,20 @@
             // 
             // dateTimePicker_Rewards
             // 
-            dateTimePicker_Rewards.Location = new Point(876, 454);
+            dateTimePicker_Rewards.Location = new Point(837, 474);
             dateTimePicker_Rewards.Name = "dateTimePicker_Rewards";
             dateTimePicker_Rewards.Size = new Size(249, 33);
             dateTimePicker_Rewards.TabIndex = 46;
+            // 
+            // progressBar_Member1
+            // 
+            progressBar_Member1.ForeColor = Color.Plum;
+            progressBar_Member1.Location = new Point(214, 476);
+            progressBar_Member1.Maximum = 105;
+            progressBar_Member1.Name = "progressBar_Member1";
+            progressBar_Member1.Size = new Size(598, 31);
+            progressBar_Member1.TabIndex = 0;
+            progressBar_Member1.Click += progressBar_Member1_Click;
             // 
             // pictureBox11
             // 
@@ -287,6 +310,15 @@
             // 
             // panel_RewardsMembers
             // 
+            panel_RewardsMembers.Controls.Add(radioButton9);
+            panel_RewardsMembers.Controls.Add(radioButton8);
+            panel_RewardsMembers.Controls.Add(radioButton7);
+            panel_RewardsMembers.Controls.Add(radioButton6);
+            panel_RewardsMembers.Controls.Add(radioButton5);
+            panel_RewardsMembers.Controls.Add(radioButton4);
+            panel_RewardsMembers.Controls.Add(radioButton3);
+            panel_RewardsMembers.Controls.Add(radioButton2);
+            panel_RewardsMembers.Controls.Add(radioButton1);
             panel_RewardsMembers.Controls.Add(label_Member1);
             panel_RewardsMembers.Controls.Add(Label_Member2);
             panel_RewardsMembers.Controls.Add(label_Member9);
@@ -301,11 +333,101 @@
             panel_RewardsMembers.Size = new Size(120, 354);
             panel_RewardsMembers.TabIndex = 28;
             // 
+            // radioButton9
+            // 
+            radioButton9.AutoSize = true;
+            radioButton9.Location = new Point(30, 272);
+            radioButton9.Name = "radioButton9";
+            radioButton9.Size = new Size(14, 13);
+            radioButton9.TabIndex = 35;
+            radioButton9.TabStop = true;
+            radioButton9.UseVisualStyleBackColor = true;
+            // 
+            // radioButton8
+            // 
+            radioButton8.AutoSize = true;
+            radioButton8.Location = new Point(30, 241);
+            radioButton8.Name = "radioButton8";
+            radioButton8.Size = new Size(14, 13);
+            radioButton8.TabIndex = 34;
+            radioButton8.TabStop = true;
+            radioButton8.UseVisualStyleBackColor = true;
+            // 
+            // radioButton7
+            // 
+            radioButton7.AutoSize = true;
+            radioButton7.Location = new Point(30, 210);
+            radioButton7.Name = "radioButton7";
+            radioButton7.Size = new Size(14, 13);
+            radioButton7.TabIndex = 33;
+            radioButton7.TabStop = true;
+            radioButton7.UseVisualStyleBackColor = true;
+            // 
+            // radioButton6
+            // 
+            radioButton6.AutoSize = true;
+            radioButton6.Location = new Point(30, 179);
+            radioButton6.Name = "radioButton6";
+            radioButton6.Size = new Size(14, 13);
+            radioButton6.TabIndex = 32;
+            radioButton6.TabStop = true;
+            radioButton6.UseVisualStyleBackColor = true;
+            // 
+            // radioButton5
+            // 
+            radioButton5.AutoSize = true;
+            radioButton5.Location = new Point(30, 148);
+            radioButton5.Name = "radioButton5";
+            radioButton5.Size = new Size(14, 13);
+            radioButton5.TabIndex = 31;
+            radioButton5.TabStop = true;
+            radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            radioButton4.AutoSize = true;
+            radioButton4.Location = new Point(30, 117);
+            radioButton4.Name = "radioButton4";
+            radioButton4.Size = new Size(14, 13);
+            radioButton4.TabIndex = 30;
+            radioButton4.TabStop = true;
+            radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            radioButton3.AutoSize = true;
+            radioButton3.Location = new Point(30, 86);
+            radioButton3.Name = "radioButton3";
+            radioButton3.Size = new Size(14, 13);
+            radioButton3.TabIndex = 29;
+            radioButton3.TabStop = true;
+            radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            radioButton2.AutoSize = true;
+            radioButton2.Location = new Point(30, 55);
+            radioButton2.Name = "radioButton2";
+            radioButton2.Size = new Size(14, 13);
+            radioButton2.TabIndex = 28;
+            radioButton2.TabStop = true;
+            radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            radioButton1.AutoSize = true;
+            radioButton1.Location = new Point(30, 24);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(14, 13);
+            radioButton1.TabIndex = 27;
+            radioButton1.TabStop = true;
+            radioButton1.UseVisualStyleBackColor = true;
+            // 
             // label_Member1
             // 
             label_Member1.AutoSize = true;
             label_Member1.ForeColor = Color.Silver;
-            label_Member1.Location = new Point(66, 23);
+            label_Member1.Location = new Point(69, 20);
             label_Member1.Name = "label_Member1";
             label_Member1.Size = new Size(77, 21);
             label_Member1.TabIndex = 18;
@@ -315,7 +437,7 @@
             // 
             Label_Member2.AutoSize = true;
             Label_Member2.ForeColor = Color.Silver;
-            Label_Member2.Location = new Point(66, 61);
+            Label_Member2.Location = new Point(69, 58);
             Label_Member2.Name = "Label_Member2";
             Label_Member2.Size = new Size(82, 21);
             Label_Member2.TabIndex = 19;
@@ -335,7 +457,7 @@
             // 
             label_Member3.AutoSize = true;
             label_Member3.ForeColor = Color.Silver;
-            label_Member3.Location = new Point(66, 97);
+            label_Member3.Location = new Point(69, 94);
             label_Member3.Name = "label_Member3";
             label_Member3.Size = new Size(82, 21);
             label_Member3.TabIndex = 20;
@@ -345,7 +467,7 @@
             // 
             label_Member8.AutoSize = true;
             label_Member8.ForeColor = Color.Silver;
-            label_Member8.Location = new Point(66, 285);
+            label_Member8.Location = new Point(69, 282);
             label_Member8.Name = "label_Member8";
             label_Member8.Size = new Size(82, 21);
             label_Member8.TabIndex = 25;
@@ -355,7 +477,7 @@
             // 
             label_Member4.AutoSize = true;
             label_Member4.ForeColor = Color.Silver;
-            label_Member4.Location = new Point(66, 134);
+            label_Member4.Location = new Point(69, 131);
             label_Member4.Name = "label_Member4";
             label_Member4.Size = new Size(82, 21);
             label_Member4.TabIndex = 21;
@@ -365,7 +487,7 @@
             // 
             label_Member7.AutoSize = true;
             label_Member7.ForeColor = Color.Silver;
-            label_Member7.Location = new Point(66, 248);
+            label_Member7.Location = new Point(69, 245);
             label_Member7.Name = "label_Member7";
             label_Member7.Size = new Size(81, 21);
             label_Member7.TabIndex = 24;
@@ -375,7 +497,7 @@
             // 
             label_Member5.AutoSize = true;
             label_Member5.ForeColor = Color.Silver;
-            label_Member5.Location = new Point(66, 172);
+            label_Member5.Location = new Point(69, 169);
             label_Member5.Name = "label_Member5";
             label_Member5.Size = new Size(82, 21);
             label_Member5.TabIndex = 22;
@@ -385,7 +507,7 @@
             // 
             label_Member6.AutoSize = true;
             label_Member6.ForeColor = Color.Silver;
-            label_Member6.Location = new Point(66, 211);
+            label_Member6.Location = new Point(69, 208);
             label_Member6.Name = "label_Member6";
             label_Member6.Size = new Size(82, 21);
             label_Member6.TabIndex = 23;
@@ -422,7 +544,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("MV Boli", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(441, 22);
+            label1.Location = new Point(434, 51);
             label1.Name = "label1";
             label1.Size = new Size(185, 25);
             label1.TabIndex = 14;
@@ -446,16 +568,6 @@
             richTextBox2.Size = new Size(598, 34);
             richTextBox2.TabIndex = 9;
             richTextBox2.Text = "  5 - 10 - 20 - 30 - 40 - 50 - 60 - 70 - 80 - 90 - 100";
-            // 
-            // progressBar_Member1
-            // 
-            progressBar_Member1.ForeColor = Color.Plum;
-            progressBar_Member1.Location = new Point(214, 476);
-            progressBar_Member1.Maximum = 105;
-            progressBar_Member1.Name = "progressBar_Member1";
-            progressBar_Member1.Size = new Size(598, 31);
-            progressBar_Member1.TabIndex = 0;
-            progressBar_Member1.Click += progressBar_Member1_Click;
             // 
             // tabPage2
             // 
@@ -849,6 +961,25 @@
             // 
             familyMembersBindingSource.DataSource = typeof(FamilyMembers);
             // 
+            // groupBox3
+            // 
+            groupBox3.Controls.Add(label5_ChoresTotal);
+            groupBox3.Location = new Point(319, 92);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new Size(411, 225);
+            groupBox3.TabIndex = 47;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Reward Status Update";
+            // 
+            // label5_ChoresTotal
+            // 
+            label5_ChoresTotal.AutoSize = true;
+            label5_ChoresTotal.Location = new Point(105, 71);
+            label5_ChoresTotal.Name = "label5_ChoresTotal";
+            label5_ChoresTotal.Size = new Size(98, 21);
+            label5_ChoresTotal.TabIndex = 0;
+            label5_ChoresTotal.Text = "           ";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -887,6 +1018,8 @@
             tabControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)choreBindingSource).EndInit();
             ((System.ComponentModel.ISupportInitialize)familyMembersBindingSource).EndInit();
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -962,5 +1095,16 @@
         private DateTimePicker dateTimePicker_ChoreList;
         private BindingSource choreBindingSource;
         private BindingSource familyMembersBindingSource;
+        private RadioButton radioButton1;
+        private RadioButton radioButton9;
+        private RadioButton radioButton8;
+        private RadioButton radioButton7;
+        private RadioButton radioButton6;
+        private RadioButton radioButton5;
+        private RadioButton radioButton4;
+        private RadioButton radioButton3;
+        private RadioButton radioButton2;
+        private GroupBox groupBox3;
+        private Label label5_ChoresTotal;
     }
 }

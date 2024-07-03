@@ -17,7 +17,7 @@ namespace TheDreamWorks
             name = Name;
         }
     }
-    
+
     public partial class Form1 : Form
     {
         public List<FamilyMembers> family = new List<FamilyMembers>();
@@ -25,11 +25,11 @@ namespace TheDreamWorks
         public List<string> buttons = new List<string>();
         public TaskProcessor taskProcessor;
 
-                
+
         public object Button1 { get; private set; }
         public object ChoresButtons { get; private set; }
         public bool IsCompleted { get; set; }
-           
+
         public Form1()
 
 
@@ -175,7 +175,7 @@ namespace TheDreamWorks
             var taskThread = new System.Threading.Thread(() => taskProcessor.PerformTask());
             taskThread.Start();
         }
-        
+
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             listBox1_SelectedIndexChanged(sender, e, memberList);
@@ -489,9 +489,10 @@ namespace TheDreamWorks
             for (int i = 0; i <= 105; i++)
             {
                 progressBar_Member1.Value = i;
-                System.Threading.Thread.Sleep(100); 
+                System.Threading.Thread.Sleep(100);
             }
         }
+               
     }
 
 }
